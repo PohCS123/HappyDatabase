@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">HappyDatabase</string>
     <string name="action_settings">Settings</string>
+    <string name="mode">mode</string>
+    <string name="remarks">remarks</string>
+    <string name="date">date</string>
+    <string name="save">save</string>
 </resources>
