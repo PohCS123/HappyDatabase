@@ -3,6 +3,8 @@ package com.example.happydatabase
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.launch
 
 //all activity can use this view model if you declare like this...pass in application
 class FeelingViewModel (application: Application):AndroidViewModel(application) {
@@ -18,6 +20,11 @@ class FeelingViewModel (application: Application):AndroidViewModel(application) 
         val feelingDao = FeelingDatabase.getDatabase(application).feelingDao()
         repository = FeelingRepository(feelingDao)
         allFeelings = repository.allFeelings
+    }
+
+    fun insertFeeling(feeling: Feeling)
+    = viewModelScope.launch {
+        repository.insertFeeling(feeling)
     }
 
 }

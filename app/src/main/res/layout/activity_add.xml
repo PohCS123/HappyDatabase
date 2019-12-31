@@ -10,11 +10,11 @@
         android:id="@+id/imageViewSad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewNeutral"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageViewNeutral"
         app:srcCompat="@drawable/ic_sentiment_dissatisfied_black_24dp" />
 
@@ -33,11 +33,11 @@
         android:id="@+id/imageViewHappy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewNeutral"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageViewNeutral"
         app:srcCompat="@drawable/ic_sentiment_satisfied_black_24dp" />
 

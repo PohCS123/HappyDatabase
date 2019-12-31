@@ -40,9 +40,9 @@ class FeelingAdapter internal constructor(
 
     }
 
-    internal fun setFeeling(feelings : List<Feeling>){
-        this.feelings = feelings
-
+    internal fun setFeeling(feeling : List<Feeling>){
+        this.feelings = feeling
+        notifyDataSetChanged()
     }
 
 
